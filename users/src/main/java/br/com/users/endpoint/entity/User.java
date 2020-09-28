@@ -6,6 +6,8 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Document(collection = "user")
@@ -19,7 +21,7 @@ public class User {
     private String lastName;
     private String email;
     private String password;
-    private LocalDateTime dateBirth;
+    private LocalDate dateBirth;
     private String genre;
     private String phoneNumber;
 

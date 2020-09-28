@@ -4,6 +4,7 @@ import br.com.users.endpoint.entity.User;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -14,7 +15,7 @@ public class UserDTO {
     private String lastName;
     private String email;
     private String password;
-    private LocalDateTime dateBirth;
+    private LocalDate dateBirth;
     private String genre;
     private String phoneNumber;
 

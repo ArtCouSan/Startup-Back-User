@@ -5,7 +5,7 @@ spring:
   application:
     name: v1-users
   profiles:
-    active: prod
+    active: dev
 
 #eureka:
 #  instance:
