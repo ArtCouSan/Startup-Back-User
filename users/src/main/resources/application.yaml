@@ -1,11 +1,10 @@
 server:
   port: 8082
-
 spring:
   application:
     name: v1-users
   profiles:
-    active: dev
+    active: prod
 
 #eureka:
 #  instance:

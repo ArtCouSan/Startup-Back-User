@@ -1,16 +1,16 @@
 version: '3'
 services:
-#  v1-users:
-#    build:
-#      context: ./users/
-#      dockerfile: ./Dockerfile
-#    ports:
-#      - '8082:8082'
-#    environment:
-#      - ADDITIONAL_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8082
-#      - PROFILE=dev
-#    links:
-#      - db-v1-users
+  v1-users:
+    build:
+      context: ./users/
+      dockerfile: ./Dockerfile
+    ports:
+      - '8082:8082'
+    environment:
+      - ADDITIONAL_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8082
+      - PROFILE=dev
+    links:
+      - db-v1-users
   db-v1-users:
     image: mongo
     container_name: "db-v1-users"
